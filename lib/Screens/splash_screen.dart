@@ -59,6 +59,8 @@ class _Splash_ScreenState extends State<Splash_Screen>
             child: Center(
               child: RotationTransition(
                 turns: _controller,
+                //child: CircularProgressIndicator(),
+
                 child: Image.asset(
                   "assets/images/Loading Pro.png",
                   height: 50,

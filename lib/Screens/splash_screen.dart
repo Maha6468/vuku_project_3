@@ -6,9 +6,24 @@ class Splash_Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Vuku"),
-      ),
+      backgroundColor: Color(0xFF54BB52),
+      body:Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Center(
+            child: Column(
+              children: [
+                SizedBox(height: 200,),
+                Image.asset("assets/images/Vector.png",height: 119,width: 119,),
+                Image.asset("assets/images/Vector (1).png",height: 43,width: 145,),
+              ],
+            ),
+          ),
+          Image.asset("assets/images/Loading Pro.png"),
+
+
+        ],
+      )
     );
   }
 }

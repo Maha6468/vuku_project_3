@@ -4,20 +4,19 @@ class Onboarding_1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //backgroundColor: Color(0xffe8f5e9),
       backgroundColor: Color(0xFFD7EAD6),
       body: Column(
         children: [
           const SizedBox(height: 60),
           Expanded(
-            flex: 4,
+            flex: 5,
             child: Center(
               child: Image.asset("assets/images/Frame.png", height: 260),
             ),
           ),
 
           Expanded(
-            flex: 4,
+            flex: 5,
             child: Stack(
               clipBehavior: Clip.none,
               children: [
@@ -36,7 +35,11 @@ class Onboarding_1 extends StatelessWidget {
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: [_dot(true), _dot(false), _dot(false)],
+                        children: [
+                          _dot(true),
+                          _dot(false),
+                          _dot(false)
+                        ],
                       ),
                       SizedBox(height: 20),
                       Text(
@@ -93,7 +96,7 @@ Widget _dot(bool isActive) {
   return Container(
     margin: const EdgeInsets.symmetric(horizontal: 4),
     height: 8,
-    width: isActive ? 14 : 8,
+    width: isActive ? 12 : 8,
     decoration: BoxDecoration(
       color: isActive ? Colors.green : Colors.grey.shade300,
       borderRadius: BorderRadius.circular(10),

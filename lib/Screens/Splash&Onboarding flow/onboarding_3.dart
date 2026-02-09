@@ -45,8 +45,8 @@ class _Onboarding_2State extends State<Onboarding_3> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           _dot(false),
-                          _dot(true),
-                          _dot(false)
+                          _dot(false),
+                          _dot(true)
                         ],
                       ),
                       SizedBox(height: 20),

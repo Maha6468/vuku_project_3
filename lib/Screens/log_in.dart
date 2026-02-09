@@ -84,8 +84,6 @@ class _Log_InState extends State<Log_In> {
               ),
             ),
             SizedBox(height: 16,),
-
-
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: SizedBox(
@@ -112,12 +110,10 @@ class _Log_InState extends State<Log_In> {
                     Expanded(child: SizedBox()),
                   ],
                 )
-
                 ),
               ),
             ),
             SizedBox(height: 20,),
-
             RichText(
                 text: TextSpan(
                     style: TextStyle(color: Colors.black),
@@ -133,18 +129,12 @@ class _Log_InState extends State<Log_In> {
                             }),
                     ])),
 
-
-
-
           ],
         ),
       ),
     );
   }
 }
-
-
-
 
 class Custom_Or_Left extends StatelessWidget {
   const Custom_Or_Left({super.key});

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:vuku_project_3/Custom_Widget/elevated_Button.dart';
 
 import '../Custom_Widget/text_from_field.dart';
 
@@ -33,6 +34,11 @@ class _Log_InState extends State<Log_In> {
               filled: true,
               hinText:"Enter Password",
               sufIcon:(Icons.remove_red_eye_outlined),
+            ),
+            SizedBox(height: 20,),
+
+            ElevatedButton_cust(
+
             ),
 
 

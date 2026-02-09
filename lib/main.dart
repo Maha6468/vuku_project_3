@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:vuku_project_3/Screens/splash_screen.dart';
+import 'package:vuku_project_3/Screens/Splash&Onboarding%20flow/splash_screen.dart';
 
-import 'Screens/onboarding_1.dart';
+import 'Screens/Splash&Onboarding flow/onboarding_1.dart';
 
 void main() {
   runApp(const MyApp());

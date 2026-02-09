@@ -52,6 +52,72 @@ class _Log_InState extends State<Log_In> {
                 Custom_Or_Right(),
               ],
             ),
+            SizedBox(height: 16,),
+            
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: SizedBox(
+                width: double.infinity,
+                height:MediaQuery.of(context).size.height*0.07,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Color(0xFFF3F4F6),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15),
+                      side: BorderSide(
+                        color: Color(0xFFD1D6DB)
+                      )
+                    )
+                  ),
+                    onPressed: (){
+
+                }, child: Row(
+                  children: [
+                    Expanded(child: SizedBox()),
+                    Image.asset("assets/images/Google_icon.png"),
+                    SizedBox(width: 10,),
+                    Text("Continue with Google",style: TextStyle(color: Colors.black),),
+                    Expanded(child: SizedBox()),
+                  ],
+                )
+
+                ),
+              ),
+            ),
+            SizedBox(height: 16,),
+
+
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: SizedBox(
+                width: double.infinity,
+                height:MediaQuery.of(context).size.height*0.07,
+                child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Color(0xFFF3F4F6),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15),
+                            side: BorderSide(
+                                color: Color(0xFFD1D6DB)
+                            )
+                        )
+                    ),
+                    onPressed: (){
+
+                    }, child: Row(
+                  children: [
+                    Expanded(child: SizedBox()),
+                    Image.asset("assets/images/Facebook_ icon.png"),
+                    SizedBox(width: 10,),
+                    Text("Sign in with Facebook",style: TextStyle(color: Colors.black),),
+                    Expanded(child: SizedBox()),
+                  ],
+                )
+
+                ),
+              ),
+            )
+
 
 
 

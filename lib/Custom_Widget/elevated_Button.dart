@@ -2,13 +2,17 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ElevatedButton_cust extends StatelessWidget {
+  final String text;
+  final double? height;
+  final double? width;
+  final VoidCallback? onPressed;
 
-  const ElevatedButton_cust({super.key});
+  const ElevatedButton_cust({super.key, required this.text, required this.height, required this.width, this.onPressed});
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 45,width: 300,
+      height:height,width: width,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           backgroundColor: Colors.green,
@@ -16,9 +20,7 @@ class ElevatedButton_cust extends StatelessWidget {
             borderRadius: BorderRadius.circular(15)
           )
         ),
-        onPressed: () {
-
-      }, child: Text("Log in",style: TextStyle(color: Colors.white,fontSize: 16),),
+        onPressed:onPressed, child: Text(text,style: TextStyle(color: Colors.white,fontSize: 16),),
 
       ),
     );

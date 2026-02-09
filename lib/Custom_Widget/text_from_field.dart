@@ -28,27 +28,31 @@ class Text_Form_Field extends StatelessWidget {
           // suffixIcon: Icon(Icons.add),
           suffixIcon: sufIcon!=null? Icon(sufIcon):null,
 
+
           enabledBorder:OutlineInputBorder(
             borderRadius: BorderRadius.circular(15),
+              //borderSide: BorderSide.none,
             borderSide: BorderSide(
               color: Colors.grey
             )
           ),
 
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(15),
-            //borderSide: BorderSide.none,
-            borderSide: BorderSide(
-              color: Colors.grey
-            )
-          ),
+          // border: OutlineInputBorder(
+          //   borderRadius: BorderRadius.circular(15),
+          //   //borderSide: BorderSide.none,
+          //   borderSide: BorderSide(
+          //     color: Colors.red
+          //   )
+          // ),
 
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(15),
+              //borderSide: BorderSide.none,
             borderSide: BorderSide(
-              color: Colors.grey
+              color: Colors.red
             )
-          )
+          ),
+
 
 
 

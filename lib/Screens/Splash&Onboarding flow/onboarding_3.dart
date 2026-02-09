@@ -51,7 +51,7 @@ class _Onboarding_2State extends State<Onboarding_3> {
                       ),
                       SizedBox(height: 20),
                       Text(
-                        "PERSONALIZED FOR EVERY\N LEARNER",
+                        "TRACK PROGRESS & EARM \N REWARDS",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 22,
@@ -62,7 +62,7 @@ class _Onboarding_2State extends State<Onboarding_3> {
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 20),
                         child: Text(
-                          "Choose your child's age reading level, and learnig goals to unlock a library designed to support their unique journey.",
+                          "Stay motivated with badges, quizzes,and a progress dashboard - turing reading into an exciting adventure every day.",
                           textAlign: TextAlign.center,
                           style: TextStyle(color: Colors.grey, fontSize: 14),
                         ),

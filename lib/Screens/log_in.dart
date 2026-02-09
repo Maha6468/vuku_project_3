@@ -40,10 +40,73 @@ class _Log_InState extends State<Log_In> {
             ElevatedButton_cust(text: 'Log in', width: 300,height: 50,
               onPressed: (){},
             ),
+            SizedBox(height: 20,),
+            Row(
+              children:[
+                Custom_Or_Left(),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 15),
+                  child: Text("Or continue with",
+                      style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold)),
+                ),
+                Custom_Or_Right(),
+              ],
+            ),
 
 
 
           ],
+        ),
+      ),
+    );
+  }
+}
+
+
+
+
+class Custom_Or_Left extends StatelessWidget {
+  const Custom_Or_Left({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return  Expanded(
+      child: Container(
+        height: 1.5,
+        decoration:  BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              Colors.transparent,
+              //Colors.white12,
+              //Colors.grey.shade200,
+              Colors.grey
+              //Colors.white,
+            ],
+            begin: Alignment.centerLeft,
+            end: Alignment.centerRight,
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class Custom_Or_Right extends StatelessWidget {
+  const Custom_Or_Right({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      child: Container(
+        height: 1.5,
+        decoration:  BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              Colors.transparent,
+              //Colors.white12,
+              Colors.grey,
+            ],
+            begin: Alignment.centerRight,
+            end: Alignment.centerLeft,
+          ),
         ),
       ),
     );

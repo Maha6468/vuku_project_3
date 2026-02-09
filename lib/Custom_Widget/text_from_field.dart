@@ -19,6 +19,7 @@ class Text_Form_Field extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(text,style: TextStyle(fontSize: 16),),
+
           SizedBox(height: 6,),
           TextFormField(
             decoration: InputDecoration(

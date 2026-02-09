@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:vuku_project_3/Custom_Widget/elevated_Button.dart';
 
@@ -116,7 +117,23 @@ class _Log_InState extends State<Log_In> {
 
                 ),
               ),
-            )
+            ),
+            SizedBox(height: 20,),
+
+            RichText(
+                text: TextSpan(
+                    style: TextStyle(color: Colors.black),
+                    children: <TextSpan>[
+                      TextSpan(text: "Not a member? "),
+                      TextSpan(
+                          text: "Sign Up",
+                          style:
+                          const TextStyle(fontWeight: FontWeight.bold,color: Colors.green,fontSize: 17),
+                          recognizer: TapGestureRecognizer()
+                            ..onTap = () {
+                              print("hello");
+                            }),
+                    ])),
 
 
 

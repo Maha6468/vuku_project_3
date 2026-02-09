@@ -54,7 +54,6 @@ class _Log_InState extends State<Log_In> {
               ],
             ),
             SizedBox(height: 16,),
-            
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: SizedBox(
@@ -81,7 +80,6 @@ class _Log_InState extends State<Log_In> {
                     Expanded(child: SizedBox()),
                   ],
                 )
-
                 ),
               ),
             ),

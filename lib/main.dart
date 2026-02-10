@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vuku_project_3/Screens/Sign%20Up%20Flow/Sign_Up.dart';
 import 'package:vuku_project_3/Screens/Splash&Onboarding%20flow/onboarding_2.dart';
 import 'package:vuku_project_3/Screens/Splash&Onboarding%20flow/splash_screen.dart';
 import 'package:vuku_project_3/Screens/log_in.dart';
@@ -23,7 +24,8 @@ class MyApp extends StatelessWidget {
       //home: Onboarding_1(),
       //home: Onboarding_2(),
       //home: Onboarding_3(),
-      home: Log_In(),
+      //home: Log_In(),
+      home: Sign_Up(),
 
     );
   }

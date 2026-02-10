@@ -46,7 +46,7 @@ class _Log_InState extends State<Log_In> {
               children:[
                 Custom_Or_Left(),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 15),
+                  padding: EdgeInsets.symmetric(horizontal: 10),
                   child: Text("Or continue with",
                       style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold)),
                 ),

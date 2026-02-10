@@ -21,6 +21,7 @@ class _Sign_UpState extends State<Sign_Up> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            SizedBox(height: 40,),
             Text("Create an Account",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
             Text("Please Fill this detail to create an account",style: TextStyle(fontSize:16,color: Colors.grey),),
             SizedBox(height: 30,),
@@ -50,12 +51,20 @@ class _Sign_UpState extends State<Sign_Up> {
             Row(
               children:[
                 //Custom_Or_Left(),
+                Expanded(child: Divider(
+                  color: Colors.grey,
+                  thickness: 1,
+                )),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 15),
+                  padding: EdgeInsets.symmetric(horizontal: 10),
                   child: Text("Or continue with",
                       style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold)),
                 ),
                 //Custom_Or_Right(),
+                Expanded(child: Divider(
+                  color: Colors.grey,
+                  thickness: 1,
+                )),
               ],
             ),
             SizedBox(height: 16,),
@@ -123,7 +132,7 @@ class _Sign_UpState extends State<Sign_Up> {
                 text: TextSpan(
                     style: TextStyle(color: Colors.black),
                     children: <TextSpan>[
-                      TextSpan(text: "Already a member? "),
+                      TextSpan(text: "Already a member? ",style: TextStyle(color: Colors.grey)),
                       TextSpan(
                           text: "Sign in",
                           style:
@@ -133,7 +142,6 @@ class _Sign_UpState extends State<Sign_Up> {
                               print("hello");
                             }),
                     ])),
-
           ],
         ),
       ),

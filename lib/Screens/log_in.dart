@@ -120,7 +120,7 @@ class _Log_InState extends State<Log_In> {
                     children: <TextSpan>[
                       TextSpan(text: "Not a member? "),
                       TextSpan(
-                          text: "Sign Up",
+                          text: "Sign Up Flow",
                           style:
                           const TextStyle(fontWeight: FontWeight.bold,color: Colors.green,fontSize: 17),
                           recognizer: TapGestureRecognizer()

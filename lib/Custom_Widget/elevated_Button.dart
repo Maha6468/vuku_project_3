@@ -15,7 +15,7 @@ class ElevatedButton_cust extends StatelessWidget {
       height:height,width: width,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          backgroundColor: Colors.green,
+          backgroundColor: Color(0xFF54BB52),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(15)
           )

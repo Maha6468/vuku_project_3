@@ -38,7 +38,7 @@ class _Log_InState extends State<Log_In> {
             ),
             SizedBox(height: 20,),
 
-            ElevatedButton_cust(text: 'Log in', width: 300,height: 50,
+            ElevatedButton_cust(text: 'Log in', width: 320,height: 50,
               onPressed: (){},
             ),
             SizedBox(height: 20,),

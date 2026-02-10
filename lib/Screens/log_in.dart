@@ -142,7 +142,7 @@ class Custom_Or_Left extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Expanded(
       child: Container(
-        height: 1.5,
+        height: 2.5,
         decoration:  BoxDecoration(
           gradient: LinearGradient(
             colors: [
@@ -167,7 +167,7 @@ class Custom_Or_Right extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        height: 1.5,
+        height: 2.5,
         decoration:  BoxDecoration(
           gradient: LinearGradient(
             colors: [

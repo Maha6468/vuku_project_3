@@ -40,7 +40,7 @@ class _Verification_codeState extends State<Verification_code> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text("Verification Code",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+              Text("Verification ode",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
             Text("Enter the verification code that we have sent to your email",style: TextStyle(color: Colors.grey,fontSize: 15),),
               SizedBox(height: 30,),
               Center(

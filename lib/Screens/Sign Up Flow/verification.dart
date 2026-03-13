@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:pinput/pinput.dart';
+
+import '../../Custom_Widget/elevated_Button.dart';
 
 class Verification_code extends StatefulWidget {
   const Verification_code({super.key});
@@ -56,7 +59,26 @@ class _Verification_codeState extends State<Verification_code> {
                   },
                 ),
               ),
+              SizedBox(height: 20,),
+              ElevatedButton_cust(text: 'Sign Up', width: 320,height: 50,
+                onPressed: (){},
+              ),
 
+              SizedBox(height: 20,),
+              RichText(
+                  text: TextSpan(
+                      style: TextStyle(color: Colors.black),
+                      children: <TextSpan>[
+                        TextSpan(text: "Re-send code in  ",style: TextStyle(color: Colors.grey)),
+                        TextSpan(
+                            text: "0:43",
+                            style:
+                            const TextStyle(fontWeight: FontWeight.bold,color: Colors.green,fontSize: 17),
+                            recognizer: TapGestureRecognizer()
+                              ..onTap = () {
+                                print("hello");
+                              }),
+                      ])),
 
 
 

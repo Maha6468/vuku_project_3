@@ -63,12 +63,7 @@ class _Verification_codeState extends State<Verification_code> {
               SizedBox(height: 20,),
               ElevatedButton_cust(text: 'Sign Up', width: 320,height: 50,
                 onPressed: (){
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => VerificationScreen(),
-                    ),
-                  );
+                  showVerificationSuccessDialog(context);
                 },
               ),
 

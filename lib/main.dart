@@ -27,7 +27,8 @@ class MyApp extends StatelessWidget {
       //home: Onboarding_3(),
       //home: Log_In(),
       //home: Sign_Up(),
-      home: Verification_code(),
+      //home: Verification_code(),
+      //home:Splash_Screen(),
 
     );
   }

@@ -2,7 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class VerificationScreen extends StatelessWidget {
-
+  const VerificationScreen({super.key});
+  @override
+  State<VerificationScreen> createState() =>VerificationScreen();
+}
   void showSuccessDialog(BuildContext context) {
     showDialog(
       context: context,
@@ -18,7 +21,6 @@ class VerificationScreen extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
 
-                // Green Circle Icon
                 Container(
                   width: 80,
                   height: 80,
@@ -26,40 +28,24 @@ class VerificationScreen extends StatelessWidget {
                     color: Colors.green,
                     shape: BoxShape.circle,
                   ),
-                  child: Icon(
-                    Icons.check,
-                    color: Colors.white,
-                    size: 40,
-                  ),
+                  child: Icon(Icons.check, color: Colors.white, size: 40),
                 ),
 
                 SizedBox(height: 20),
 
-                // Text
                 Text(
                   "Account verified\nSuccessfully",
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
 
                 SizedBox(height: 20),
 
-                // Done Button
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.green,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      padding: EdgeInsets.symmetric(vertical: 12),
-                    ),
                     onPressed: () {
-                      Navigator.pop(context);
+                      Navigator.pop(context); // dialog বন্ধ
                     },
                     child: Text("Done"),
                   ),
@@ -69,12 +55,6 @@ class VerificationScreen extends StatelessWidget {
           ),
         );
       },
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
     );
   }
 }

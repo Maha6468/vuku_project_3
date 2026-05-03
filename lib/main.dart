@@ -4,6 +4,7 @@ import 'package:vuku_project_3/Screens/Splash&Onboarding%20flow/onboarding_2.dar
 import 'package:vuku_project_3/Screens/Splash&Onboarding%20flow/splash_screen.dart';
 import 'package:vuku_project_3/Screens/log_in.dart';
 
+import 'Screens/Sign Up Flow/varification_popup.dart';
 import 'Screens/Sign Up Flow/verification.dart';
 import 'Screens/Splash&Onboarding flow/onboarding_1.dart';
 import 'Screens/Splash&Onboarding flow/onboarding_3.dart';
@@ -27,8 +28,9 @@ class MyApp extends StatelessWidget {
       //home: Onboarding_3(),
       //home: Log_In(),
       //home: Sign_Up(),
-      //home: Verification_code(),
+      home: Verification_code(),
       //home:Splash_Screen(),
+     // home: VerificationScreen(),
 
     );
   }

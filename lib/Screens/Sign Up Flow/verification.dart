@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:pinput/pinput.dart';
+import 'package:vuku_project_3/Screens/Sign%20Up%20Flow/varification_popup.dart';
 
 import '../../Custom_Widget/elevated_Button.dart';
 
@@ -61,7 +62,14 @@ class _Verification_codeState extends State<Verification_code> {
               ),
               SizedBox(height: 20,),
               ElevatedButton_cust(text: 'Sign Up', width: 320,height: 50,
-                onPressed: (){},
+                onPressed: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => VerificationScreen(),
+                    ),
+                  );
+                },
               ),
 
               SizedBox(height: 20,),
